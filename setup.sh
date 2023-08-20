@@ -17,7 +17,7 @@ source bash_alias.sh
 # Install modules
 pip3 install --no-warn-script-location \
     huggingface_hub ipython trl torch torchvision numpy \
-    accelerate bitsandbytes
+    accelerate bitsandbytes scipy
 
 # configure git for huggingface
 git config --global credential.helper store
