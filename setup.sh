@@ -16,4 +16,8 @@ source bash_alias.sh
 
 # Install modules
 pip3 install --no-warn-script-location \
-    huggingface_hub ipython torch torchvision numpy
+    huggingface_hub ipython trl torch torchvision numpy
+
+# configure git for huggingface
+git config --global credential.helper store
+
