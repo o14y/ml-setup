@@ -9,6 +9,7 @@ rm cuda-keyring_1.1-1_all.deb
 
 # Install pip
 sudo apt-get -y install python3-pip
+sudo apt-get -y install tree
 
 # Configure aliases
 sudo cp bash_alias.sh /etc/profile.d/
@@ -17,8 +18,7 @@ source bash_alias.sh
 # Install modules
 pip3 install --no-warn-script-location \
     huggingface_hub ipython trl torch torchvision numpy \
-    accelerate bitsandbytes scipy
+    accelerate bitsandbytes scipy peft
 
 # configure git for huggingface
 git config --global credential.helper store
-
